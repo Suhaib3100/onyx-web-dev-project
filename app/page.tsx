@@ -17,6 +17,7 @@ import {
   Blocks,
   Gem,
 } from "lucide-react"
+import { TestimonialSlider } from "@/components/testimonial-slider"
 
 export default function Home() {
   return (
@@ -246,6 +247,20 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      <section className="py-32 bg-gradient-to-b from-purple-950/20 to-black overflow-hidden">
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          variants={staggerContainer}
+          className="container mx-auto px-4"
+        >
+          <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-bold text-center mb-16">
+            Voices of Success
+          </motion.h2>
+        </motion.div>
+        <TestimonialSlider />
+      </section>
 
       {/* Join Us Section */}
       <section className="py-32 relative overflow-hidden">
@@ -257,6 +272,7 @@ export default function Home() {
           variants={staggerContainer}
           className="container mx-auto px-4"
         >
+          
           <motion.div variants={fadeIn} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Wait? Join Us Now</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
