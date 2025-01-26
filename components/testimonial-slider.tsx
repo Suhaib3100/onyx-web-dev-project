@@ -11,25 +11,28 @@ const testimonials = [
     id: 1,
     content:
       "Coding Redefined transformed my career. The hands-on projects and mentorship were invaluable. I've grown from a beginner to a confident full-stack developer in just months.",
-    author: "Alex Johnson",
-    role: "Full Stack Developer",
+    author: "Om Nair",
+    role: "Machine language enginer",
     avatar: "/placeholder.svg?height=100&width=100",
+    image: "/student1.jpg",
   },
   {
     id: 2,
     content:
-      "The AI-driven learning paths helped me grasp complex concepts quickly. I've never seen a more intuitive and effective way to learn machine learning. Highly recommended!",
-    author: "Samantha Lee",
-    role: "Machine Learning Engineer",
+      "The Coding Redefined transformed my career. The hands-on projects and mentorship were invaluable. I've grown from a beginner to a confident full-stack developer in just months!",
+    author: "Suhaib SZ ",
+    role: "Full Stack Developer",
     avatar: "/placeholder.svg?height=100&width=100",
+    image: "/student2.jpg",
   },
   {
     id: 3,
     content:
       "The community support and real-world projects gave me the confidence to land my dream job. The skills I've gained are directly applicable to my daily work as a frontend developer.",
-    author: "Michael Chen",
+    author: "Soniya",
     role: "Frontend Developer",
     avatar: "/placeholder.svg?height=100&width=100",
+    image: "/student3.jpg"
   },
 ]
 
@@ -82,9 +85,10 @@ export function TestimonialSlider() {
             </div>
             <div className="w-full md:w-1/2 relative">
               <div className="aspect-video bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-lg overflow-hidden">
+                {/* Show image for each testimonial */}
                 <img
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Student working"
+                  src={testimonials[currentIndex].image}
+                  alt="testimonial"
                   className="w-full h-full object-cover opacity-80"
                 />
               </div>
@@ -113,4 +117,3 @@ export function TestimonialSlider() {
     </div>
   )
 }
-
