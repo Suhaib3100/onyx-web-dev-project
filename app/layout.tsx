@@ -8,8 +8,8 @@ import { Footerdemo } from "@/components/ui/footer-section"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Coding Redefined",
-  description: "Where Code Is About Understanding",
+  title: "Onyx-Website by Suhaib",
+  description: "The project given by onyx Software to create a landing page.Made by Suhaib",
 }
 
 export default function RootLayout({
